@@ -2,4 +2,13 @@
 using namespace std;
 
 int main(){
-cout << "*****AYO PESAN TIKET MU SEKARANG*****"<<endl;
+  cout << "*****AYO PESAN TIKET MU SEKARANG*****"<<endl;
+  cout << "\n=== Menu Utama ===\n";
+  cout << "1. Pesan Tiket\n";
+  cout << "2. Batalkan Pesanan\n";
+  cout << "3. Lihat Riwayat Transaksi\n";
+  cout << "4. Lihat Penumpang\n";
+  cout << "5. Keluar\n";
+
+  return 0;
+}
