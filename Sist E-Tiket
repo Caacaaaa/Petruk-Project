@@ -1,2 +1,12 @@
 #include <iostrem>
+#include <string>
 usingnamespace std;
+
+struct User {
+  string nama;
+  string no_hp;
+  string email;
+  string jenisTiket;
+  string day;
+  string nomorTiket
+};
