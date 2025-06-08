@@ -10,3 +10,17 @@ struct User {
   string day;
   string nomorTiket
 };
+
+
+
+
+
+cout<< "=======Sabrina Concert Lampung edition=======\n";
+cout<<"Nomor Resi:"<<  <<endl;
+cout<<"Hari Konser ke:"<<  <<endl;
+cout<<"Golongan:"<<  <<endl;
+cout << "=============================================\n";
+
+
+return 0;
+}
