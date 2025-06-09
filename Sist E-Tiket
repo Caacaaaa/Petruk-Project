@@ -11,8 +11,13 @@ struct User {
   string nomorTiket
 };
 
-
-
+string generateResi() {
+    srand(time(0));
+    string resi = "RSI";
+    for (int i = 0; i < 6; ++i)
+        resi += '0' + rand() % 10;
+    return resi;
+}
 
 
 cout<< "=======Sabrina Concert Lampung edition=======\n";
