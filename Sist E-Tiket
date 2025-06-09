@@ -18,7 +18,15 @@ string generateResi() {
         resi += '0' + rand() % 10;
     return resi;
 }
-
+void tampilkanHarga(map<string, int>& harga)
+{
+cout << "=== Daftar Harga Tiket ===\n";
+for (map<string, int>::iterator it =
+harga.begin(); it != harga.end(); ++it) {
+cout << it->first << ":Rp " << it->second << endl;
+}
+cout << "===============================\n";
+}
 
 cout<< "=======Sabrina Concert Lampung edition=======\n";
 cout<<"Nomor Resi:"<<  <<endl;
