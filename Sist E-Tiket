@@ -25,8 +25,15 @@ for (map<string, int>::iterator it =
 harga.begin(); it != harga.end(); ++it) {
 cout << it->first << ":Rp " << it->second << endl;
 }
-cout << "===============================\n";
+cout << "==========================\n";
 }
+
+void inputUserData(UserData* user) {
+    clearScreen();
+    cout << "=== Input Data Diri ===\n";
+    cout << "Masukkan nama: ";
+    getline(cin, user->nama);
+    cout << "Masukkan no. telepon: ";
 
 cout<< "=======Sabrina Concert Lampung edition=======\n";
 cout<<"Nomor Resi:"<<  <<endl;
