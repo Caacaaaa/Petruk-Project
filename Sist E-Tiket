@@ -14,6 +14,13 @@ struct UserData {
   string nik;
 };
 
+struct Tiket{
+  string jenis;
+  int harga;
+  string hari;
+  string resi;
+};
+
 string generateResi() {
     srand(time(0));
     string resi = "RSI";
