@@ -33,7 +33,20 @@ cout<<"Nomor Resi:"<<  <<endl;
 cout<<"Hari Konser ke:"<<  <<endl;
 cout<<"Golongan:"<<  <<endl;
 cout << "=============================================\n";
-
+} else {
+cout << "Pembayaran dibatalkan\n";
+dompet.isiSaldo(harga[pilihanTiket]);
+} 
+cout << "tekan enter untuk kembali ke menu;
+cin.get();
+} else {
+cout << "Menu tidak tersedia\n";
+cout << " Tekan enter untuk kembali ke menu..";
+cin.get();
+}
+}
+clearScreen();
+cout << "\nTerima Kasih telah menggunakan sistem pemesanan tiket konser!\n";
 
 return 0;
 }
