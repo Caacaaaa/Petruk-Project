@@ -1,14 +1,17 @@
 #include <iostrem>
 #include <string>
+#include <vector>
+#include <map>
+#include <ctime>
+#include <cstdlib>
 usingnamespace std;
 
-struct User {
+struct UserData {
   string nama;
-  string no_hp;
+  string noTelp;
   string email;
-  string jenisTiket;
-  string day;
-  string nomorTiket
+  string usia;
+  string nik;
 };
 
 string generateResi() {
