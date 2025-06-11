@@ -53,7 +53,10 @@ void inputUserData(UserData* user) {
     cout << "Masukkan nama: ";
     getline(cin, user->nama);
     cout << "Masukkan no. telepon: ";
-
+    getline(cin, user->noTelp);
+    cout << "Masukkan email: ";
+    getline(cin, user->email);
+    cout << "Masukkan usia: ";
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
