@@ -57,6 +57,9 @@ void inputUserData(UserData* user) {
     cout << "Masukkan email: ";
     getline(cin, user->email);
     cout << "Masukkan usia: ";
+    cin >> user->usia;
+    cin.ignore();
+}
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
