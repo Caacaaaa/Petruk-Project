@@ -54,6 +54,28 @@ void inputUserData(UserData* user) {
     getline(cin, user->nama);
     cout << "Masukkan no. telepon: ";
 
+
+if (harga.find(pilihanTiket) == harga.end()){
+cout << "Pilihan tidak valid\n";
+cout << "Tekan Enter untuk kembali ke menu..."
+cin.get();
+continue;
+}
+if (!dompet.bayar(harga[pilihanTiket])){
+cout << "saldo tidak mencukupi. silahkan top up terlebih dahulu\n";
+cout << "Tekan enter untuk kembali..";
+cin.get();
+continue;
+}
+string hari = pilihHari();
+inputUserData(&user);
+
+cout << "\n Setujui pembayaran? (y/n):";
+char setuju;
+cin >> setuju;
+cin.ignore();
+
+
 cout<< "=======Sabrina Concert Lampung edition=======\n";
 cout<<"Nomor Resi:"<<  <<endl;
 cout<<"Hari Konser ke:"<<  <<endl;
