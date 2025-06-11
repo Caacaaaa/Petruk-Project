@@ -67,6 +67,7 @@ cout << "Tekan enter untuk kembali..";
 cin.get();
 continue;
 }
+
 string hari = pilihHari();
 inputUserData(&user);
 
@@ -85,6 +86,7 @@ cout << "=============================================\n";
 cout << "Pembayaran dibatalkan\n";
 dompet.isiSaldo(harga[pilihanTiket]);
 } 
+
 cout << "tekan enter untuk kembali ke menu;
 cin.get();
 } else {
