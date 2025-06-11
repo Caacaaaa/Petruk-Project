@@ -21,6 +21,15 @@ struct Tiket{
   string resi;
 };
 
+class SistemTopUp{
+  int saldo;
+public:
+  SistemTopUp() : saldo(0){}
+  void isiSaldo(int jumlah){
+  saldo += jumlah;
+  cout << "Saldo berhasil ditambahkan. Saldo saat ini: Rp " << saldo << endl;
+  }
+
 string generateResi() {
     srand(time(0));
     string resi = "RSI";
@@ -30,12 +39,12 @@ string generateResi() {
 }
 void tampilkanHarga(map<string, int>& harga)
 {
-cout << "=== Daftar Harga Tiket ===\n";
-for (map<string, int>::iterator it =
-harga.begin(); it != harga.end(); ++it) {
-cout << it->first << ":Rp " << it->second << endl;
+  cout << "=== Daftar Harga Tiket ===\n";
+  for (map<string, int>::iterator it =
+  harga.begin(); it != harga.end(); ++it) {
+  cout << it->first << ":Rp " << it->second << endl;
 }
-cout << "==========================\n";
+  cout << "==========================\n";
 }
 
 void inputUserData(UserData* user) {
