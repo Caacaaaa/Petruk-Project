@@ -27,8 +27,29 @@ public:
   SistemTopUp() : saldo(0){}
   void isiSaldo(int jumlah){
   saldo += jumlah;
-  cout << "Saldo berhasil ditambahkan. Saldo saat ini: Rp " << saldo << endl;
+  cout << "___________________________" << endl;
+  cout << "Saldo berhasil ditambahkan!" << endl;
+  cout << "Saldo saat ini: Rp " << saldo << endl;
+  cout << "---------------------------" << endl;
   }
+
+  bool bayar(int harga){
+    if(saldo >= harga){
+        saldo -= harga;
+        return true;
+  }
+    return false;
+  }
+  int getSaldo() const {return saldo; }
+};
+
+void clearScreen(){
+#ifdef_WIN32
+  system("cls");
+#else
+  system("clear");
+#endif
+}
 
 string generateResi() {
     srand(time(0));
