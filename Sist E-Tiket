@@ -81,6 +81,8 @@ void inputUserData(UserData* user) {
     cin >> user->usia;
     cin.ignore();
 }
+string pilihHari() {
+    clearScreen();
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
