@@ -82,7 +82,7 @@ void inputUserData(UserData* user) {
     cout << "=== Input Data Diri ===\n";
     cout << "Masukkan nama: ";
     getline(cin, user->nama);
-    cout << "Masukkan no. telepon: ";
+    cout << "Masukkan no.telepon: ";
     getline(cin, user->noTelp);
     cout << "Masukkan email: ";
     getline(cin, user->email);
