@@ -115,7 +115,7 @@ int main() {
    tampilkanTampilanAwal();
     while (true) {
         clearScreen();
-        cout << "======================\n";
+        cout << "==========================\n";
         cout << "     'Menu Utama'     \n";
         tampilkanHarga(harga);
         cout << "1. Pilih Tiket\n2. Top Up Saldo\n3. Lihat Saldo\n0. Keluar\n";
