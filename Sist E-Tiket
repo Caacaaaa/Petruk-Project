@@ -93,6 +93,7 @@ string pilihHari() {
     cin.ignore();
     return hari[pilih - 1];
 }
+
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
 cout << "Tekan Enter untuk kembali ke menu..."
