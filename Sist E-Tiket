@@ -163,7 +163,7 @@ continue;
 string hari = pilihHari();
 inputUserData(&user);
 
-cout << "\n Setujui pembayaran? (y/n):";
+cout << "\nSetujui pembayaran? (y/n):";
 char setuju;
 cin >> setuju;
 cin.ignore();
