@@ -147,7 +147,7 @@ else if (menu == 3) {
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
-cout << "Tekan Enter untuk kembali ke menu...;"
+cout << "Tekan Enter untuk kembali ke menu...";
 cin.get();
 continue;
 }
