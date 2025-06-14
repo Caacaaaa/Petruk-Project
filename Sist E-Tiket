@@ -50,7 +50,15 @@ void clearScreen(){
   system("clear");
 #endif
 }
-
+void tampilkanTampilanAwal() {
+    clearScreen();
+    
+   cout <<"|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"<<endl;
+    cout <<"|*Step Into the Magic: Sabrina Carpenter Concert Starts Now!*|"<<endl;
+    cout<<"|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"<<endl;
+    
+    cin.get(); 
+}
 string generateResi() {
     srand(time(0));
     string resi = "RSI";
