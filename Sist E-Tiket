@@ -184,7 +184,7 @@ cout << "Pembayaran dibatalkan\n";
 dompet.isiSaldo(harga[pilihanTiket]);
 } 
 
-cout << "tekan enter untuk kembali ke menu;
+cout << "tekan enter untuk kembali ke menu";
 cin.get();
 } else {
 cout << "Menu tidak tersedia\n";
