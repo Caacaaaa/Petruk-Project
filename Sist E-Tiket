@@ -186,11 +186,11 @@ cout << "Pembayaran dibatalkan\n";
 dompet.isiSaldo(harga[pilihanTiket]);
 } 
 
-cout << "tekan enter untuk kembali ke menu";
+cout << "Tekan enter untuk kembali ke menu";
 cin.get();
 } else {
 cout << "Menu tidak tersedia\n";
-cout << " Tekan enter untuk kembali ke menu..";
+cout << "Tekan enter untuk kembali ke menu..";
 cin.get();
 }
 }
