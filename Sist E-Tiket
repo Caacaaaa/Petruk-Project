@@ -98,8 +98,7 @@ string pilihHari() {
         cout << i + 1 << ". " << hari[i] << endl;
     cout << "Pilihan Anda (1-3): ";
     cin >> pilih;
-    cin.ignore();
-    return hari[pilih - 1];
+    cin.ignore(); return hari[pilih - 1];
 }
 int main() {
     map<string, int> harga;
