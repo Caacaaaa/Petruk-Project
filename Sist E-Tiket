@@ -6,9 +6,6 @@
 #include <cstdlib>
 usingnamespace std;
 
-void clearScreen();
-string generateResi();
-
 struct UserData {
   string nama;
   string noTelp;
@@ -47,7 +44,11 @@ public:
 };
 
 void clearScreen(){
+#ifdef _WIN32
   system("cls");
+#else
+  system("clear");
+#endif
 }
 
 string generateResi() {
