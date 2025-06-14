@@ -112,7 +112,7 @@ int main() {
 
     int menu;
     string pilihanTiket;
-
+   tampilkanTampilanAwal();
     while (true) {
         clearScreen();
         cout << "===== Menu Utama =====\n";
