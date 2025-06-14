@@ -114,6 +114,13 @@ char setuju;
 cin >> setuju;
 cin.ignore();
 
+ if (setuju == 'y' || setuju == 'Y') {
+                Tiket tiket;
+                tiket.jenis = pilihanTiket;
+                tiket.harga = harga[pilihanTiket];
+                tiket.hari = hari;
+                tiket.resi = generateResi();
+                tiketTerbeli.push_back(tiket);
 
 cout<< "=======Sabrina Concert Lampung edition=======\n";
 cout<<"Nomor Resi:"<<  <<endl;
