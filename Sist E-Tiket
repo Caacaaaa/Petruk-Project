@@ -148,7 +148,7 @@ else if (menu == 3) {
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
-cout << "Tekan Enter untuk kembali ke menu..."
+cout << "Tekan Enter untuk kembali ke menu...;"
 cin.get();
 continue;
 }
@@ -176,9 +176,9 @@ cin.ignore();
                 tiketTerbeli.push_back(tiket);
 
 cout<< "=======Sabrina Concert Lampung edition=======\n";
-cout<<"Nomor Resi:"<<  <<endl;
-cout<<"Hari Konser ke:"<<  <<endl;
-cout<<"Golongan:"<<  <<endl;
+cout<<"Nomor Resi:"<<tiket.resi <<endl;
+cout<<"Hari Konser ke:"<< tiket.hari <<endl;
+cout<<"Golongan:"<<tiket.jenis  <<endl;
 cout << "=============================================\n";
 } else {
 cout << "Pembayaran dibatalkan\n";
