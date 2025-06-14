@@ -101,6 +101,50 @@ string pilihHari() {
     cin.ignore();
     return hari[pilih - 1];
 }
+int main() {
+    map<string, int> harga;
+    harga["VIP"] = 500000;
+    harga["Reguler"] = 200000;
+
+    SistemTopUp dompet;
+    vector<Tiket> tiketTerbeli;
+    UserData user;
+
+    int menu;
+    string pilihanTiket;
+
+    while (true) {
+        clearScreen();
+        cout << "===== Menu Utama =====\n";
+        tampilkanHarga(harga);
+        cout << "1. Pilih Tiket\n2. Top Up Saldo\n3. Lihat Saldo\n0. Keluar\n";
+        cout << "Masukkan pilihan: ";
+        cin >> menu;
+        cin.ignore();
+
+        if (menu == 0) break;
+        else if (menu == 2) {
+            clearScreen();
+            int tambah;
+            cout << "Masukkan jumlah top up: Rp ";
+            cin >> tambah;
+            cin.ignore();
+            dompet.isiSaldo(tambah);
+            cout << "Tekan Enter untuk kembali ke menu...";
+            cin.get();
+        }
+else if (menu == 3) {
+            clearScreen();
+            cout << "=== Saldo Anda Saat Ini ===\n";
+            cout << "Saldo: Rp " << dompet.getSaldo() << endl;
+            cout << "===========================\n";
+            cout << "Tekan Enter untuk kembali ke menu...";
+            cin.get();
+        }
+        else if (menu == 1) {
+            clearScreen();
+            cout << "Pilih tipe tiket (VIP/Reguler): ";
+            getline(cin, pilihanTiket);
 
 if (harga.find(pilihanTiket) == harga.end()){
 cout << "Pilihan tidak valid\n";
