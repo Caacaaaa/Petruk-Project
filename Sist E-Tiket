@@ -11,7 +11,6 @@ struct UserData {
   string noTelp;
   string email;
   string usia;
-  string nik;
 };
 
 struct Tiket{
